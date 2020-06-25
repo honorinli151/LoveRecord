@@ -18,11 +18,11 @@
                 <div class="item active" style="width: 100%;height: 100%;">
                     <div style="width: 100%;height: 100%;background:url(./img/1.jpg);background-size: cover;"></div>
                 </div>
-                <div class="item active" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background:url(./img/2.jpg);background-size: cover;"></div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/2.jpg) ;background-size: cover;"></div>
                 </div>
-                <div class="item active" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background:url(./img/3.jpg);background-size: cover;"></div>
+                <div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/3.jpg) ;background-size: cover;"></div>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
                 <div class="modal-header">
                     <h1 class="text-center" style="color: #A94442;font-family: 'JournalRegular', Arial, sans-serif;font-size: 7rem;">the times we together</h1>
                     <p class="text-center small-title">Jiachen & Chenle</p>
-                    <p class="text-center small-title">On the way</p>
+                    <p class="text-center small-title">ON THE WAY</p>
                 </div>
                 <div class="modal-body text-center" style="line-height: 1.5rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 3rem;">
                     <p>
@@ -63,11 +63,12 @@
             $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,感谢相伴。");
         } else
             $(document).attr("title", "在一起" + days + "天,感谢相伴。");
-        
+
+        //设置每一张图片对应的文字
         var says = new Array(
             "2020/06/19, 十字街, 洛阳",
             "2020/06/20, Triple Go, 洛阳",
-            "2020/06/20, 音乐喷泉, 洛阳",
+            "2020/06/20, 音乐喷泉, 洛阳"
         );
 
 
@@ -75,16 +76,14 @@
             var index = 0;
             var rate = 6000;
             $('#say').text(says[(index++) % says.length]);
-            var _play = function () {
-                $('#say').hide();
+         	var _play = function () {
+         		$('#say').hide();
                 $('#say').text(says[(index++) % says.length]);
                 $('#say').fadeToggle();
                 $('#carousel').carousel('next');
-            };
+         	};
             setInterval(_play, rate);
         }();
-
-
 
     });
     </script>
