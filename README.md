@@ -1,1 +1,1 @@
-[点此，查看我们的记忆](https://iamjohnnyzhuang.github.io/LoveRecord/iloveu.html) 
+[点此，查看我们的记忆](https://honorinli151.github.io/LoveRecord/iloveu) 
